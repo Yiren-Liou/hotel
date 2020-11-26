@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>White Space</title>
+  <!-- jquery -->
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <!-- lightbix -->
+  <link rel="stylesheet" href="assets/css/lightbox.min.css">   
+  <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+<body>
+  <div class="roomBanner container-fluid px-0 mb-5">
+		<div class="row no-gutters">
+			<div class="col-md-9">
+				<a href="index.html"><img src="assets/images/index_icon/logo_block.svg" alt="" class="logo-black position-absolute"></a>
+				<a href="assets/images/room_pictures/lightbox1.jpg" class="bannerImg-l bg-center " style="background-image: url(assets/images/room_pictures/lightbox1.jpg);" data-lightbox="roomPictures" data-title="roomPicture1">
+				</a>
+			</div>
+			<div class="col-md-3">
+				<a href="assets/images/room_pictures/lightbox2.jpg" class="bannerImg-m bg-center" style="background-image: url(assets/images/room_pictures/lightbox2.jpg);" data-lightbox="roomPictures" data-title="roomPicture2">
+				</a>
+				<a href="assets/images/room_pictures/lightbox3.jpg" class="bannerImg-m bg-center" style="background-image: url(assets/images/room_pictures/lightbox3.jpg);" data-lightbox="roomPictures" data-title="roomPicture3">
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="container mb-5">
+		<nav aria-label="breadcrumb">
+		  <ol class="breadcrumb bg-transparent pl-0">
+		    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+		    <li class="breadcrumb-item active" aria-current="page">Single Room</li>
+		  </ol>
+		</nav>
+		<div class="row">
+			<div class="col-md-8">
+				<div class="row">
+					<div class="col-md-8">
+						<h2 class="roomTitle mb-4">Single Room</h2>
+						<ul class="mb-3">
+							<li class="mb-2">房客人數限制： 1~1 人</li>
+							<li class="mb-2">床型：單人床</li>
+							<li class="mb-2">衛浴數量： 1 間</li>
+							<li class="mb-2">房間大小： 18 平方公尺</li>
+						</ul>
+						<p class="font-size-s text-justify mb-3">Single Room is only reserved for one guest. There is a bedroom with a single size bed and a private bathroom. Everything you need prepared for you: sheets and blankets, towels, soap and shampoo, hairdryer are provided. In the room there is AC and of course WiFi.</p>
+						<span class="font-size-s font-weight-bold d-block mb-3">\ \ \</span>
+						<div class="d-flex mb-4">
+							<div class="d-flex flex-column mr-5">
+								<p class="font-size-s">Check In</p>
+								<span class="font-size-m">15:00  —  21:00</span>
+							</div>
+							<div class="d-flex flex-column">
+								<p class="font-size-s">Check Out</p>
+								<span class="font-size-m">10:00</span>
+							</div>
+						</div>
+						<div class="row d-flex bg-light p-3">
+							<ul class="col-md-4 px-3">
+								<li class="d-flex font-size-xs mb-2">
+									<i class="fas fa-wifi mr-3"></i>WiFi
+								</li>
+								<li class="d-flex font-size-xs mb-2">
+									<i class="fas fa-utensils mr-3"></i>早餐
+								</li>
+								<li class="d-flex font-size-xs text-muted mb-2">
+									<i class="fas fa-glass-martini-alt mr-3"></i>Mini Bar
+								</li>
+								<li class="d-flex font-size-xs text-muted">
+									<i class="fas fa-concierge-bell mr-3"></i>Room Service
+								</li>
+							</ul>
+							<ul class="col-md-4 px-3">
+								<li class="d-flex font-size-xs mb-2">
+									<i class="fas fa-phone mr-3"></i>電話
+								</li>
+								<li class="d-flex font-size-xs mb-2">
+									<i class="fas fa-wind mr-3"></i>空調
+								</li>
+								<li class="d-flex font-size-xs mb-2">
+									<i class="fas fa-archive mr-3"></i>冰箱
+								</li>
+								<li class="d-flex font-size-xs text-muted">
+									<i class="fas fa-couch mr-3"></i>沙發
+								</li>
+							</ul>
+							<ul class="col-md-4 px-3">
+								<li class="d-flex font-size-xs text-muted mb-2">
+									<i class="fas fa-mountain mr-3"></i>風景
+								</li>
+								<li class="d-flex font-size-xs mb-2">
+									<i class="fas fa-smoking-ban mr-3"></i>禁止吸煙
+								</li>
+								<li class="d-flex font-size-xs text-muted mb-2">
+									<i class="fas fa-baby mr-3"></i>適合兒童
+								</li>
+								<li class="d-flex font-size-xs">
+									<i class="fas fa-dog mr-3"></i>攜帶寵物
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-4 text-right pt-2">
+						<p class="font-size-xl">NT.1230</p>
+						<span class="font-size-s text-muted d-block mb-2">平日(一~四)</span>
+						<p class="text-dark">NT.1250</p>
+						<span class="font-size-s text-muted">假日(五~日)</span>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div id="datepicker" class="datePicker mb-4"></div>
+				<!-- Button trigger modal -->
+				<button type="button" class="btn btn-confirm" data-toggle="modal" data-target="#reserveDateBtn">預約時段</button>
+
+				<!-- 選擇預約時段 Modal -->
+				<div class="modal fade" id="reserveDateBtn" tabindex="-1" aria-labelledby="reserveDateTitle" aria-hidden="true" data-backdrop="static">
+				  <div class="modal-dialog">
+				    <div class="modal-content p-3">
+				      <div class="modal-header flex-column border-0 pb-0">
+				        <h5 class="modal-title font-weight-bold mb-2" id="reserveDateTitle">預約時段</h5>
+				        <span> \ \ \ </span>
+				      </div>
+				      <div class="modal-body">
+							  <div class="row mb-3">
+							    <label for="inputName" class="col-sm-4 col-form-label font-weight-bold mb-2" >姓名<sup class="text-primary">*</sup></label>
+							    <div class="col-sm-8">
+							      <input type="text" class="form-control" id="inputName">
+							      <span class="jsNameError text-primary"></span>
+							    </div>
+							  </div>
+							  <div class="row mb-3">
+							    <label for="inputTel" class="col-sm-4 col-form-label font-weight-bold mb-2">電話<sup class="text-primary">*</sup></label>
+							    <div class="col-sm-8">
+							      <input type="tel" class="form-control" id="inputTel">
+							      <span class="jsTelError text-primary"></span>
+							    </div>
+							  </div>
+							  <div class="row mb-4">
+							    <label for="inputTel" class="col-sm-4 col-form-label font-weight-bold mb-2">預約起迄<sup class="text-primary">*</sup></label>
+							    <div class="col-sm-8">
+							    	<div class="d-flex align-items-center w-100 mb-2">
+							    		<input type="text" class="datePicker datePickerInput dateFrom"></p>
+									    <span class="mx-2"> ~ </span>
+									    <input type="text" class="datePicker datePickerInput dateTo"></p>
+							    	</div>
+							    	<span class="jsDateError text-primary"></span>
+							    </div>
+							  </div>
+
+							  <div class="pickDay bg-light px-5 py-2 mb-3">
+							  	<span class="font-size-s font-weight-bold text-secondary">總住宿天數</span>
+							  	<p class="jsdays font-size-s font-weight-bold text-secondary"></p>
+							  </div>
+							  <p class="jsTotalPrice text-right font-size-xl font-weight-bold"></p>
+				      </div>
+				      <div class="modal-footer d-flex justify-content-between border-0">
+				        <button type="button" class="closeModal btn btn-light" data-dismiss="modal">取消</button>
+				        <button type="button" class="btn btn-confirm" id="reserveBtn" type="submit" data-toggle="modal" data-target="#reserveSuccess" data-dismiss="modal" disabled="disabled">確定預約</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+
+				<!-- 預約成功 Modal -->
+				<div class="modal fade" id="reserveSuccess" tabindex="-1" aria-labelledby="reserveSuccessTitle" aria-hidden="true">
+				  <div class="modal-dialog">
+				    <div class="modal-content p-3">
+				      <div class="modal-header flex-column border-0 pb-0">
+				        <h5 class="modal-title font-weight-bold mb-2" id="reserveSuccessTitle">預約成功</h5>
+				        <span> \ \ \ </span>
+				      </div>
+				      <div class="modal-body d-flex justify-content-center">
+							  <img src="assets/images/info_icon/tick-inside-circle.svg" alt="" class="reserveSuccessImg">
+				      </div>
+				      <div class="modal-footer border-0">
+				      	<a class="btn btn-confirm" href="index.html" role="button">回頁面</a>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer text-center bg-light py-1">
+		<span class="font-size-s">Copyright © Yiren.Liou and Edith.Hsu</span>
+	</div>
+  
+
+  <!-- bootstrap4 -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  <!-- lightbox -->
+  <script src="assets/js/lightbox-plus-jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+  <script type="text/javascript" src="assets/js/all.js"></script>
+</body>
+</html>
