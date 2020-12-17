@@ -7,7 +7,8 @@
   <!-- jquery -->
   <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
   <!-- lightbix -->
-  <link rel="stylesheet" href="assets/css/lightbox.min.css">   
+	<link rel="stylesheet" href="assets/css/lightbox.min.css">
+	<!-- CSS only -->
   <link rel="stylesheet" href="assets/css/style.min.css">
 </head>
 <body>
@@ -112,7 +113,7 @@
 			<div class="col-md-4">
 				<div id="datepicker" class="datePicker mb-4"></div>
 				<!-- Button trigger modal -->
-				<button type="button" class="btn btn-confirm" data-toggle="modal" data-target="#reserveDateBtn">預約時段</button>
+				<button type="button" class="btn btn-confirm" data-bs-toggle="modal" data-bs-target="#reserveDateBtn">預約時段</button>
 
 				<!-- 選擇預約時段 Modal -->
 				<div class="modal fade" id="reserveDateBtn" tabindex="-1" aria-labelledby="reserveDateTitle" aria-hidden="true" data-backdrop="static">
@@ -156,8 +157,8 @@
 							  <p class="jsTotalPrice text-right font-size-xl font-weight-bold"></p>
 				      </div>
 				      <div class="modal-footer d-flex justify-content-between border-0">
-				        <button type="button" class="closeModal btn btn-light" data-dismiss="modal">取消</button>
-				        <button type="button" class="btn btn-confirm" id="reserveBtn" type="submit" data-toggle="modal" data-target="#reserveSuccess" data-dismiss="modal" disabled="disabled">確定預約</button>
+				        <button type="button" class="closeModal btn btn-light" data-bs-dismiss="modal">取消</button>
+				        <button type="button" class="btn btn-confirm" id="reserveBtn" type="submit" data-bs-toggle="modal" data-bs-target="#reserveSuccess" data-bs-dismiss="modal" disabled="disabled">確定預約</button>
 				      </div>
 				    </div>
 				  </div>
@@ -184,17 +185,17 @@
 		</div>
 	</div>
 	<div class="footer text-center bg-light py-1">
-		<span class="font-size-s">Copyright © Yiren.Liou and Edith.Hsu</span>
+		<span class="font-size-s">Copyright © Yiren.Liou and Edith.Hsu(UI Design)</span>
 	</div>
+
+
   
 
   <!-- bootstrap4 -->
-  <script src="node_modules/jquery/dist/jquery.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="node_modules/bootstrap/dist/js/bootstrap.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-  <script src="node_modules/bootstrap/js/dist/popover.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-	
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 	<!-- lightbox -->
-  <script src="assets/js/lightbox-plus-jquery.min.js"></script>
+  <script src="assets/js/lightbox.min.js"></script>
   <script src="assets/js/jquery-ui.min.js"></script>
 
   <script type="text/javascript" src="assets/js/all.js"></script>
